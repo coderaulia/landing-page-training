@@ -8,6 +8,7 @@
   font-size: 32px;
 }
 
+
 /* button */
 
 .cust-button {
@@ -27,13 +28,13 @@
 .jumbotron .display-4 {
   color: white;
   margin-top: 150px;
-  font-weight: 100;   
   font-size: 38px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  font-weight: 100;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .jumbotron .display-4 span {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .jumbotron::after {
@@ -43,7 +44,7 @@
   height: 100%;
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .jumbotron .container {
@@ -51,14 +52,47 @@
   position: relative;
 }
 
+/* info panel  */
+
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: -100px;
+  padding: 30px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #acacac;
+  margin-top: -5px;
+}
+
+.info-panel img {
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 30px;
+}
+
 /* desktop size version only  */
 
-@media (min-width:992px){
+@media (min-width:992px) {
 
-  .navbar-brand, .nav-link {
+  .navbar-brand,
+  .nav-link {
     color: white !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   }
+
   .nav-link {
     text-transform: uppercase;
     margin-right: 26px;
@@ -69,7 +103,7 @@
     display: block;
     border-bottom: 3px solid #1f5fb8;
     width: 50%;
-    margin:auto;
+    margin: auto;
     padding-bottom: 3px;
     margin-bottom: -6px;
   }
@@ -81,6 +115,7 @@
 
   .jumbotron .display-4 {
     font-size: 62px;
+    margin-bottom: 30px;
   }
 
 }
@@ -88,7 +123,3 @@
 
 
 /* mobile first  */
-
-
-
-
